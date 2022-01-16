@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 
-export interface RootObject {
+export interface QuestionAndAnswers {
   question: string;
   a: string;
   b: string;
@@ -11,7 +10,7 @@ export interface RootObject {
 }
 
 function useFetchData(url: string) {
-  const [data, setData] = useState<RootObject | null>(null);
+  const [data, setData] = useState<QuestionAndAnswers[] | null>(null);
   const [done, setDone] = useState<boolean>(false);
 
   useEffect(() => {
