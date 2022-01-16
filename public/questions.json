@@ -1,0 +1,8 @@
+{
+  "question": "What is JSX?",
+  "a": "a syntax extension to javascript that combines XML and javascript syntax",
+  "b": "a syntax extension to javascript that combines HTML and javascript syntax",
+  "c": "a built-in react module that combines XML and javascript",
+  "d": "a built-in react module that combines HTML and javascript",
+  "correct": "a"
+}
