@@ -1,5 +1,5 @@
 * {
-  background-color:darkblue;
+  background-color: darkblue;
 }
 
 .App {
@@ -11,10 +11,11 @@
 
 .container {
   display: flex;
-  background-color:aliceblue; 
-  justify-content: center;
+  background-color: aliceblue;
+  flex-direction: column;
   min-height: 70vh;
   min-width: 70vw;
   border: 1px solid black;
-  border-radius: 1%;
+  border-radius: 10px;
+  margin: 5vh;
 }
