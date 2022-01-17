@@ -10,6 +10,7 @@ export const QuestionButtons = (props: any) => {
           id="a"
           name="question"
           value="a"
+          onChange={(e) => props.radioHandler(e)}
         />
         <label className="question-buttons__button--label">{props.a}</label>
       </div>
@@ -21,6 +22,7 @@ export const QuestionButtons = (props: any) => {
           id="b"
           name="question"
           value="b"
+          onChange={(e) => props.radioHandler(e)}
         />
         <label className="question-buttons__button--label">{props.b}</label>
       </div>
@@ -32,6 +34,7 @@ export const QuestionButtons = (props: any) => {
           id="c"
           name="question"
           value="c"
+          onChange={(e) => props.radioHandler(e)}
         />
         <label className="question-buttons__button--label">{props.c}</label>
       </div>
@@ -43,6 +46,7 @@ export const QuestionButtons = (props: any) => {
           id="d"
           name="question"
           value="d"
+          onChange={(e) => props.radioHandler(e)}
         />
         <label className="question-buttons__button--label">{props.d}</label>
       </div>
