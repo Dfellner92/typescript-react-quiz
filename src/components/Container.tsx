@@ -10,26 +10,26 @@ const Container = () => {
   const [radioSelected, setRadioSelected] = useState<String>("");
   const buttonRef = useRef<any>(null);
 
+  const dataLength = data !== null ? data!.length : 0;
+  console.log("data length", dataLength);
+
   const handleAnswer = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 
     if (data![index].correct === radioSelected) {
+      console.log(radioSelected);
       setScore(score + 1);
+      setIndex(index + 1);
+
       buttonRef.current!.reset();
-      setRadioSelected("");
-      setIndex(() => index + 1);
     } else {
       alert("Try again!");
     }
   };
 
-  console.log(score);
-
   const radioHandler = (event: ChangeEvent<HTMLInputElement>) => {
     setRadioSelected(event.target.value);
   };
-
-  console.log(radioSelected);
 
   return (
     <form className="container" ref={buttonRef}>

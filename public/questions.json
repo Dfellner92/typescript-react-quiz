@@ -13,6 +13,23 @@
     "b": "aat combines HTML and javntax",
     "c": "a built-in react mod and javascript",
     "d": "bines HTML and javascript",
-    "correct": "a"
+    "correct": "d"
+  },
+  {
+    "question": "What is Number Three?",
+    "a": "ascript that combines XML and javascript syntax",
+    "b": "aat combines HTML and javntax",
+    "c": "a built-in react mod and javascript",
+    "d": "bines HTML and javascript",
+    "correct": "d"
+  },
+  {
+    "question": "What is Number Four?",
+    "a": "ascript that combines XML and javascript syntax",
+    "b": "aat JAHAHAHA HTML and javntax",
+    "c": "Funneh manS",
+    "d": "bines CSS and javascript",
+    "correct": "d"
   }
+
 ]
