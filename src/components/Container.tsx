@@ -27,6 +27,10 @@ const Container = () => {
     }
   };
 
+  if (score === dataLength && dataLength !== 0) {
+    alert("You win!");
+  }
+  
   const radioHandler = (event: ChangeEvent<HTMLInputElement>) => {
     setRadioSelected(event.target.value);
   };
