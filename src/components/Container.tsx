@@ -30,27 +30,29 @@ const Container = () => {
   if (score === dataLength && dataLength !== 0) {
     alert("You win!");
   }
-  
+
   const radioHandler = (event: ChangeEvent<HTMLInputElement>) => {
     setRadioSelected(event.target.value);
   };
 
   return (
-    <form className="container" ref={buttonRef}>
-      {done && (
-        <>
-          <QuestionHead question={data![index]["question"]} />
-          <QuestionButtons
-            a={data![index].a}
-            b={data![index].b}
-            c={data![index].c}
-            d={data![index].d}
-            radioHandler={radioHandler}
-            handleAnswer={handleAnswer}
-          />
-        </>
-      )}
-    </form>
+    <div>
+      <form className="container" ref={buttonRef}>
+        {done && (
+          <>
+            <QuestionHead question={data![index]["question"]} />
+            <QuestionButtons
+              a={data![index].a}
+              b={data![index].b}
+              c={data![index].c}
+              d={data![index].d}
+              radioHandler={radioHandler}
+              handleAnswer={handleAnswer}
+            />
+          </>
+        )}
+      </form>
+    </div>
   );
 };
 
