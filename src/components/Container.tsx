@@ -1,22 +1,19 @@
 import { useState, useRef, ChangeEvent } from "react";
-import useFetchData from "../hooks/useFetchData";
 import { QuestionHead } from "./QuestionHead/QuestionHead";
 import { QuestionButtons } from "./QuestionButtons/QuestionButtons";
 
-const Container = () => {
-  const { data, done } = useFetchData("../../questions.json");
-  const [index, setIndex] = useState(0);
+function Container({ newData, done, index, setIndex }: any) {
   const [score, setScore] = useState(0);
   const [radioSelected, setRadioSelected] = useState<String>("");
   const buttonRef = useRef<any>(null);
 
-  const dataLength = data !== null ? data!.length : 0;
-  console.log("data length", dataLength);
-
+  const newDataLength = newData !== null ? newData!.length : 0;
+  console.log("newData length", newDataLength);
+  console.log("newData", newData);
   const handleAnswer = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 
-    if (data![index].correct === radioSelected) {
+    if (newData![index].correct === radioSelected) {
       console.log(radioSelected);
       setScore(score + 1);
       setIndex(index + 1);
@@ -27,7 +24,7 @@ const Container = () => {
     }
   };
 
-  if (score === dataLength && dataLength !== 0) {
+  if (score === newDataLength && newDataLength !== 0) {
     alert("You win!");
   }
 
@@ -36,24 +33,22 @@ const Container = () => {
   };
 
   return (
-    <div>
-      <form className="container" ref={buttonRef}>
-        {done && (
-          <>
-            <QuestionHead question={data![index]["question"]} />
-            <QuestionButtons
-              a={data![index].a}
-              b={data![index].b}
-              c={data![index].c}
-              d={data![index].d}
-              radioHandler={radioHandler}
-              handleAnswer={handleAnswer}
-            />
-          </>
-        )}
-      </form>
-    </div>
+    <form className="container" ref={buttonRef}>
+      {done && (
+        <>
+          <QuestionHead question={newData[index]["question"]} />
+          <QuestionButtons
+            a={newData[index].a}
+            b={newData[index].b}
+            c={newData[index].c}
+            d={newData[index].d}
+            radioHandler={radioHandler}
+            handleAnswer={handleAnswer}
+          />
+        </>
+      )}
+    </form>
   );
-};
+}
 
 export default Container;

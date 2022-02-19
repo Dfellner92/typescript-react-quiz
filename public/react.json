@@ -1,0 +1,58 @@
+[
+  {
+    "question": "What is JSX?",
+    "a": "a syntax extension to javascript that combines XML and javascript syntax",
+    "b": "a syntax extension to javascript that combines HTML and javascript syntax",
+    "c": "a built-in react module that combines XML and javascript",
+    "d": "a built-in react module that combines HTML and javascript",
+    "correct": "a"
+  },
+  {
+    "question": "What is the best definition of props?",
+    "a": "An object that contains state",
+    "b": "What is rendered from state in a react component",
+    "c": "Data passed down from a parent to a child component",
+    "d": "A customization of state that can be used anywhere in your react app",
+    "correct": "c"
+  },
+  {
+    "question": "Why should we use refs?",
+    "a": "Easier to isolate elements for passing props or state",
+    "b": "So we can mimic DOM updates in the React virtual DOM",
+    "c": "So we can assign state to a form component",
+    "d": "To make useEffect or Lifecycle methods more reliable",
+    "correct": "b"
+  },
+  {
+    "question": "Which is not a good way to initialize useState?",
+    "a": "{}",
+    "b": "[]",
+    "c": "",
+    "d": "0",
+    "correct": "c"
+  },
+  {
+    "question": "What is an advantage of Class components?",
+    "a": "Object Oriented Programming is easier to work with in React",
+    "b": "The lifecycle methods can be more direct in handling data than scripting hooks properly",
+    "c": "Binding methods are easier to work with",
+    "d": "There is less code to write per component",
+    "correct": "b"
+  },
+  {
+    "question": "What is the difference between state and props?",
+    "a": "",
+    "b": "The lifecycle methods can be more direct in handling data than scripting hooks properly",
+    "c": "Binding methods are easier to work with",
+    "d": "There is less code to write per component",
+    "correct": "b"
+  },
+  {
+    "question": "What is an advantage of Class components?",
+    "a": "Object Oriented Programming is easier to work with in React",
+    "b": "The lifecycle methods can be more direct in handling data than scripting hooks properly",
+    "c": "Binding methods are easier to work with",
+    "d": "There is less code to write per component",
+    "correct": "b"
+  }
+]

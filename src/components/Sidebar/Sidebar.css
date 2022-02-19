@@ -4,11 +4,11 @@
   flex-direction: column;
   font-family: sans-serif;
   position: fixed;
-  width: 200px;
+  width: 120px;
   height: 100%;
-  background: #151719;
+  background: aliceblue;
   transition: all 300ms linear;
-  left: -200px;
+  left: -120px;
 }
 
 .sidebar.active {
@@ -17,23 +17,30 @@
   flex-direction: column;
   font-family: sans-serif;
   position: fixed;
-  width: 200px;
+  width: 120px;
   height: 100%;
-  background: #151719;
+  background: aliceblue;
   left: 0px;
 }
-
+.sidebar-list {
+  margin-left: -38px;
+}
 .sidebar ul li {
-  background: #151719;
-  color: rgba(230, 230, 230, 0.9);
+  background: #002e8b;
+  color: aliceblue;
   list-style: none;
   padding: 15px 10px;
-  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  border-bottom: 1px solid aliceblue;
+}
+
+.sidebar ul li:hover {
+  background: #00458b;
 }
 
 .sidebar-toggle {
-  position: absolute;
-  left: 230px;
+  transition: all 300ms linear;
+  position: fixed;
+  left: 25px;
   top: 20px;
 }
 

@@ -21,7 +21,7 @@ function useFetchData(url: string) {
         setDone(true);
       });
   }, [url]);
-
+  console.log(data);
   return { data, done };
 }
 
